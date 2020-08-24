@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+.card-person{
+    width: 200px;
+    height: 200px;
+}
+
+.img-desc{
+    height: 300px;
+}
+
+.img-post{
+    height: 200px;
+
+}
+
+#title-home{
+    color: blue;
+    font-family: cursive;
+}
+
+#title-button{
+    color: crimson;
+    font-size: 25px;
+    font-family: Impact, Charcoal, sans-serif;
+    text-decoration: none;
+}
+
+#text-desc{
+    color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

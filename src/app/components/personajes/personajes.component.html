@@ -1,0 +1,17 @@
+<div class="container mt-4">
+
+    <h2 id="title-home">{{title_home}}</h2>
+
+    <div class="alert alert-danger" *ngIf="!characters">
+        Cargando...
+    </div>
+
+    <div class="card-group col-12">
+        <div class="mt-2 col-md-4" *ngFor=" let character of characters">
+            <img class="card-img-top mt-1" src="{{character.image}}">
+            <div class="card-body">
+                <a id="title-button" [routerLink]="['/details/', character.id]">{{character.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>

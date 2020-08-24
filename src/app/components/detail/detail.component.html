@@ -1,0 +1,18 @@
+<div class="alert alert-danger mt-4" *ngIf="!character">
+    No existe el personaje
+</div>
+
+<div class="container mt-4" *ngIf="character">
+    <h2 id="title-home">{{title_home}}</h2>
+
+    <div class="card mb-3 mt-4">
+        <img class="card-img-top img-desc" src="{{character.image}}" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-title"><span id="text-desc">Nombre: </span>{{character.name}}</h2>
+            <h5 class="card-text"><span id="text-desc">Estado: </span>{{character.status}}</h5>
+            <h5 class="card-text"><span id="text-desc">Especie: </span>{{character.species}}</h5>
+            <h5 class="card-text"><span id="text-desc">Origen: </span>{{character.origin.name}}</h5>
+            <h5 class="card-text"><span id="text-desc">Localización: </span>{{character.location.name}}</h5>
+        </div>
+    </div>
+</div>
